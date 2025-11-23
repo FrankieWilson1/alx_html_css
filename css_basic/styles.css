@@ -1,0 +1,59 @@
+body {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    position: relative;
+    min-height: 100vh;
+
+}
+
+header {
+    background-color: #127369;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    color: #BFBFBF;
+    
+}
+
+header ul {
+    list-style: none;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    flex: auto;
+    padding: 60px 0 60px 0;
+    background-color: #BFBFBF;
+}
+
+article img {
+    width: 100px;
+    height: auto;
+}
+
+article {
+    flex: 2;
+    overflow-y: auto;
+    background-color: aliceblue;
+}
+
+aside {
+    flex: 1;
+    overflow-y: auto;
+    background-color: #8AA6A3;
+    padding-top: 5px;
+}
+
+footer {
+    background-color: #127369;
+    position: absolute;
+    left: 0;
+    right: 0;
+    text-align: center;
+    bottom: 0;
+    color: #BFBFBF;
+}
