@@ -57,3 +57,7 @@ footer {
     bottom: 0;
     color: #BFBFBF;
 }
+
+a[href*="FrankieWilson1"] {
+    color: black;
+}
