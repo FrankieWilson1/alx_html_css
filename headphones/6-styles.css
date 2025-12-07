@@ -1,0 +1,499 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
+}
+
+body {
+    line-height: 1;
+    font-family: 'Source Sans Pro';
+    color: var(--text-color);
+}
+
+
+/*
+
+Custom Properties Definition
+*/
+:root {
+    /* Color variables */
+    --primary-color: #007bff;
+    --text-color: #FFFFFF;
+    --button-color: #FF6565;
+
+    /* Font */
+    --main-font: 'Source Sans Pro'
+        --font-weight-regular: 400;
+    --font-weight-bold: 700;
+}
+
+@font-face {
+    font-family: 'Source Sans Pro';
+    src: url('assets/fonts/SourceSansPro-Regular.otf') format('otf'),
+        url('assets/fonts/SourceSansPro-Regular.otf') format('otf');
+
+    font-display: swap;
+}
+
+/********************* Header and Navigation ********************************/
+
+header {
+    width: 100%;
+    height: 100vh;
+    background-image: url('assets/images/headphones_hero_1.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 100px;
+    padding: 20px 5%;
+}
+
+.logo {
+    margin-left: 20px;
+    width: 160px;
+    height: 32px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 30px;
+    cursor: pointer;
+}
+
+nav ul li:hover {
+    color: var(--button-color);
+}
+
+/***************** Hero Section ********************/
+.hero {
+    max-width: 600px;
+    max-height: 300px;
+    margin: 230px auto 0 auto;
+    display: flex;
+    flex-direction: column;
+    padding: 20px 5%;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 32px;
+    line-height: auto;
+    margin: 5px;
+}
+
+.hero> :nth-child(2) {
+    font-size: 18px;
+    margin: 0 0 30px 0;
+}
+
+.hero button {
+    width: 166px;
+    height: 44;
+    padding: 15px 15px;
+    border-radius: 22px;
+    border: none;
+    background-color: var(--button-color);
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+}
+
+.hero button:hover {
+    background-color: #FF6565;
+    opacity: 0.9;
+}
+
+.hero> :last-child {
+    margin: 30px 20px 0px 20px;
+    line-height: 26px;
+    font-size: 18;
+
+}
+
+
+/** Main section **/
+.what-we-do {
+    color: black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 25% 0 25%;
+    text-align: center;
+
+}
+
+.what-we-do h3 {
+    font-weight: 600;
+    font-size: 32px;
+    color: #071629;
+    margin: 20px;
+}
+
+.what-we-do p {
+    font-size: 18px;
+    line-height: 26px;
+}
+
+.media {
+    display: flex;
+    margin: 20px 50px 20px 50px;
+    padding: 20px 10px;
+}
+
+.media .icons img {
+    width: 100px;
+    height: 100px;
+}
+
+.media .icons {
+    color: #071629;
+    text-align: center;
+    padding: 20px;
+    margin: 20px;
+}
+
+.media .icons h4 {
+    font-size: 18;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.media .icons p {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 26px;
+}
+
+
+/************* Our Results section ********************/
+.our-results {
+    background-image: url('assets/images/headphones_hero_2.jpg');
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: center;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+}
+
+.our-results h3 {
+    font-size: 32px;
+    font-weight: 600;
+    font-size: 32px;
+    padding-top: 40px;
+}
+
+.our-results p {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 20px 25% 0 25%;
+}
+
+.graphic {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-bottom: 40px;
+}
+
+/*
+
+.result-item {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 150px;
+}
+
+.result-item img {
+    width: 100%;
+    height: 100%;
+}
+
+.result-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    color: var(--text-color);
+    z-index: 10;
+}
+
+.result-text .percentage {
+    font-weight: 700;
+    font-size: 1.5em;
+    margin: 0;
+
+}
+
+.result-text .result-paragraph {
+    font-size: 0.8em;
+    font-weight: 400;
+    margin: 5px 0 0 0;
+    padding: 5px;
+    line-height: 1.2;
+} */
+
+.pentagon {
+    width: 0px;
+    height: 0;
+
+    margin: 50px auto;
+    border-bottom: 70px solid red;
+    border-left: 60px solid transparent;
+    border-right: 60px solid transparent;
+    position: relative;
+}
+
+.pentagon::before {
+    content: "";
+    position: absolute;
+    top: 70px;
+    left: -60px;
+
+    width: 120px;
+    height: 40px;
+    background-color: red;
+}
+
+
+/************** Contact Me Section ****************/
+.contact-us {
+    display: flex;
+    flex-direction: column;
+    color: #071629;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    padding: 30px;
+    text-align: center;
+    align-content: center;
+    align-items: center;
+}
+
+.contact-us h3 {
+     font-size: 32px;
+    font-weight: 600;
+    font-size: 32px;
+    padding-top: 30px;
+}
+
+.contact-us button {
+    width: 166px;
+    height: 44;
+    padding: 15px 15px;
+    border-radius: 22px;
+    border: none;
+    background-color: var(--button-color);
+    cursor: pointer;
+    color: var(--text-color);
+    font-weight: bold;
+    margin: 20px 0 20px 0;
+}
+
+.contact-us button:hover {
+    background-color: #FF6565;
+    opacity: 0.9;
+}
+
+.form-group {
+    display: flex;
+    align-items: flex-end;
+    margin-bottom: 25px;
+}
+
+.form-group label {
+    width: 150px;
+    text-align: left;
+    font-size: 1.2em;
+    color: #333;
+    margin-right: 10px;
+}
+
+.form-group input {
+    flex-grow: 1;
+}
+
+.contact-us form input {
+    border: none;
+    background-color: transparent;
+    box-shadow: none;
+    border-bottom: 2px solid #ccc;
+    color: #333;
+    outline: none;
+    transition: border-bottom-color 0.3s ease;
+}
+
+.contact-us form input::placeholder {
+    color: #888;
+    opacity: 1;
+}
+
+/*********************** Footer ******************************/
+footer {
+    background-color: #071629;
+}
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 20px;
+}
+
+.footer .top-content {
+    display: flex;
+    gap: 40%;
+    justify-content: center;
+    padding: 30px;
+    align-items: center;
+}
+
+.social-links {
+    display: flex;
+    align-items: center;
+}
+
+.social-links img {
+    width: 25px;
+    height: 25px;
+    margin: 15px;
+    border-radius: 50%;
+    padding: 5px;
+}
+
+.social-icon {
+    background-color: var(--text-color);
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #ccc;
+}
